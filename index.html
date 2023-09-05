@@ -9,10 +9,24 @@
   <body>
     <main>
       <h1>Iffy</h1>
-      <img
-        src="https://picsum.photos/id/343/200/300"
-        alt="image displayed because not github pages"
-      />
+      <script>
+        if (
+          console.log(
+            "window.location.includes(stuff)",
+            window.location.host.includes("github.io")
+          )
+        ) {
+          <img
+            scr="https://picsum.photos/id/200/200/300"
+            alt="image displayed because ON github pages"
+          />;
+        } else {
+          <img
+            src="https://picsum.photos/id/343/200/300"
+            alt="image displayed because not github pages"
+          />;
+        }
+      </script>
     </main>
   </body>
 </html>
