@@ -9,22 +9,20 @@
   <body>
     <main>
       <h1>Iffy</h1>
-      <img
-        id="Image"
-        src="https://picsum.photos/id/343/200/300"
-        alt="image displayed because not github pages"
-      />
+      <img id="Image" src="" alt="" />
       <script>
+        let imageID = document.getElementById(Image);
         if (
           console.log(
             "window.location.includes(stuff)",
             window.location.host.includes("github.io")
           )
         ) {
-          document.getElementById(Image).src =
-            "https://picsum.photos/id/200/200/300";
-          document.getElementbyID(Image).alt =
-            "image displayed because ON github pages";
+          imageID.src = "https://picsum.photos/id/200/200/300";
+          imageID.alt = "image displayed because ON github pages";
+        } else {
+          imageID.src = "https://picsum.photos/id/343/200/300";
+          imageID.alt = "image displayed because not github pages";
         }
       </script>
     </main>
